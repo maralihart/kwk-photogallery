@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  font-family: 'Crete Round', serif;
+  text-shadow: 2px 2px 4px skyblue;
+}
+
+
+header {
+  background-color: pink;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+#photos {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 31%;
+  height: 500px;
+  padding: 1% 0px;
+  object-fit: cover;
+}
+
+/* img:hover {
+  width: auto;
+  height: 400px;
+  background-color: yellow;
+} */
+
+
+@media all and (max-width: 1047px) {
+  img {
+    width: 47%;
+  }
+}
+
+@media all and (max-width: 747px) {
+  img {
+    width: 98%;
+  }
+}
